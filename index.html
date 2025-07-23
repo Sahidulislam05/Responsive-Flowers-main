@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Responsive-Flowers-main</title>
     <link
       rel="stylesheet"
@@ -17,26 +14,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="m-0 p-0 box-border font-noto bg-[#f5f8ff]">
     <header>
-      <nav>
-        <section id="navbar-logo">
+      <nav
+        class="flex justify-between items-center max-w-[1140px] mt-8 ml-auto mr-auto mb-24"
+      >
+        <section class="max-w-[135px] drop-shadow-[0_0_4px_rgba(0,0,0,0.25)]">
           <img src="./assets/logo.png" alt="" />
         </section>
-        <section id="navbar-right">
-          <ul>
-            <li><a href=""></a> Home</li>
-            <li><a href=""></a> Shop</li>
-            <li><a href=""></a> About us</li>
+        <section class="flex items-center">
+          <ul class="flex justify-between items-center list-none">
+            <li>
+              <a
+                class="mr-[48px] text-[1rem] font-bold font-inter text-[#252432]"
+                href=""
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="mr-[48px] text-[1rem] font-normal font-inter text-[#8987A1]"
+                href=""
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                class="mr-[48px] text-[1rem] font-normal font-inter text-[#8987A1]"
+                href=""
+                >About us</a
+              >
+            </li>
           </ul>
-          <div class="navbar-cart">
+          <div class="flex justify-between items-center gap-2.5">
             <i class="fa-solid fa-cart-shopping"></i>
-            <h2>Cart ($56)</h2>
+            <h2 class="text-[1rem] font-normal font-inter">Cart ($56)</h2>
           </div>
         </section>
       </nav>
+      <!-- banner section -->
+      <section></section>
     </header>
     <main></main>
     <footer></footer>
