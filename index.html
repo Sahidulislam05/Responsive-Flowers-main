@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Responsive-Flowers-main</title>
     <link
       rel="stylesheet"
@@ -18,13 +19,17 @@
   <body class="m-0 p-0 box-border font-noto bg-[#f5f8ff]">
     <header>
       <nav
-        class="flex justify-between items-center max-w-[1140px] mt-8 ml-auto mr-auto mb-24"
+        class="flex justify-between items-center max-w-[460px] mt-[30px] mb-[28px] mr-auto ml-auto md:max-w-[1140px] md:mt-8 md:ml-auto md:mr-auto md:mb-24"
       >
-        <section class="max-w-[135px] drop-shadow-[0_0_4px_rgba(0,0,0,0.25)]">
+        <section
+          class="max-w-[63px] sm:max-w-[135px] drop-shadow-[0_0_4px_rgba(0,0,0,0.25)]"
+        >
           <img src="./assets/logo.png" alt="" />
         </section>
-        <section class="flex items-center">
-          <ul class="flex justify-between items-center list-none">
+        <section class="flex items-center justify-between">
+          <ul
+            class="hidden md:flex md:justify-between md:items-center md:list-none"
+          >
             <li>
               <a
                 class="mr-[48px] text-[1rem] font-bold font-inter text-[#252432]"
@@ -47,16 +52,43 @@
               >
             </li>
           </ul>
-          <div class="flex justify-between items-center gap-2.5">
+          <div class="flex justify-between items-center gap-2.5 text-center">
             <i class="fa-solid fa-cart-shopping"></i>
             <h2 class="text-[1rem] font-normal font-inter">Cart ($56)</h2>
           </div>
         </section>
       </nav>
       <!-- banner section -->
-      <section></section>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 justify-between items-center sm:max-w-[1140px] sm:mt-0 sm:mr-auto sm:ml-auto sm:mb-0"
+      >
+        <div
+          class="order-2 sm:order-1 w-[361px] mt-7 mr-auto ml-auto mb-16 sm:w-auto"
+        >
+          <h2 class="text-[1.5rem] sm:text-[4rem] font-bold mt-8">
+            ALWAYS
+            <span class="text-[#E95A08]"
+              >FRESH <br />
+              FLOWERS</span
+            >
+          </h2>
+          <p
+            class="text-[0.8rem] font-inter text-black opacity-50 sm:text-[1.37rem] mt-2.5"
+          >
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <div class="order-1 sm:order-2">
+          <img class="w-[100%]" src="./assets/hero-flower.png" alt="" />
+        </div>
+      </section>
     </header>
-    <main></main>
+    <!-- Plants section -->
+    <main>
+      
+    </main>
     <footer></footer>
   </body>
 </html>
