@@ -9,3 +9,15 @@
     font-family: "Noto Serif", serif;
   }
 }
+
+ tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      backgroundImage: {
+        'custom-bg': "url('/bg.jpg')",
+      }
+    }
+  }
+}
+
