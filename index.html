@@ -85,7 +85,7 @@
         </div>
       </section>
     </header>
-    <!-- Plants section -->
+    <!-- Our Plants section -->
     <main>
       <section
         class="max-w-[395px] sm:max-w-[1140px] mt-[12px] mb-[0px] mr-auto ml-auto"
@@ -109,6 +109,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -123,6 +124,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -137,6 +139,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -151,6 +154,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -165,6 +169,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -179,6 +184,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -193,6 +199,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -207,6 +214,7 @@
               </h2>
               <p class="text-[1.37rem] font-bold font-inter mt-5">20 USD</p>
               <button
+                onclick="welcome()"
                 class="bg-[#E95A08] pt-[20px] pb-[20px] pr-[30px] pl-[30px] sm:pt-[26px] sm:pb-[26px] sm:pr-[70px] sm:pl-[70px] mt-[30px] mb-[30px] mr-0 ml-0 text-[#FFFFFF] text-[1rem] font-semibold font-inter"
               >
                 ADD TO CART
@@ -221,7 +229,7 @@
       >
         <div class="ml-[20px] sm:ml-auto">
           <img
-            class="invisible md:visible md:absolute md:max-w-[286px] md:mt-[-150px] md:ml-[250px] lg:mt-[-110px] lg:ml-[370px] md:drop-shadow-[-4px_10px_4px_rgba(0,0,0,0.25)]"
+            class="invisible md:visible md:absolute md:max-w-[286px] md:mt-[-150px] md:ml-[250px] lg:mt-[-110px] lg:ml-[370px] md:drop-shadow-[-4px_10px_4px_rgba(0,0,0,0.25)] md:animate-[spin_7s_linear_infinite]"
             src="./assets/trusted-badge.png"
             alt=""
           />
@@ -268,28 +276,67 @@
         </p>
       </section>
       <!-- grid section -->
-      <section class="max-w-[1140px] my-[120px] mx-auto grid grid-cols-2">
-        <div class="order-1">
-          <div>
-            <img src="./assets/deal-bloom.png" alt="" />
-            <h2>60% Off | Bloom Plant</h2>
-            <a href=""> Shop now </a>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-[28px] max-w-[1140px] ml-[10px] sm:mx-auto mt-[120px]"
+      >
+        <!-- Left image -->
+        <div class="grid grid-rows-2 gap-[25px]">
+          <div class="relative overflow-hidden rounded-xl">
+            <img
+              src="./assets/deal-bloom.png"
+              alt="Bloom Plant"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center"
+            >
+              <h2 class="text-[1.25rem] font-bold">60% Off | Bloom Plant</h2>
+              <button class="text-[1rem] font-semibold underline">
+                Shop Now
+              </button>
+            </div>
           </div>
-          <div>
-            <img src="./assets/deal-ana.png" alt="" />
-            <h2>30% Off | Ana Plant</h2>
-            <a href=""> Shop now </a>
+
+          <div class="relative overflow-hidden">
+            <img
+              src="./assets/deal-ana.png"
+              alt="Ana Plant"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center"
+            >
+              <h2 class="text-[1.25rem] font-bold">30% Off | Ana Plant</h2>
+              <button class="text-[1rem] font-semibold underline">
+                Shop Now
+              </button>
+            </div>
           </div>
         </div>
-        <div class="order-2">
-          <img src="./assets/deal-zabo.png" alt="" />
-          <h2>25% Off | Zabo Plant</h2>
-          <a href=""> Shop now </a>
+
+        <!-- Right image -->
+        <div class="col-span-2">
+          <div class="relative overflow-hidden rounded-xl">
+            <img
+              src="./assets/deal-zabo.png"
+              alt="Zabo Plant"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center"
+            >
+              <h2 class="text-[1.25rem] font-bold">25% Off | Zabo Plant</h2>
+              <button class="text-[1rem] font-semibold underline">
+                Shop Now
+              </button>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+
       <!-- colourful bunch section  -->
       <section
-        class="invisible bg-[url(./assets/news-letter-bg.png)] bg-cover bg-center mt-[120px] mb-[50px] w-full h-[533px] flex items-center justify-center"
+        class="bg-[url(./assets/news-letter-bg.png)] bg-cover bg-center mt-[120px] w-full h-[533px] flex items-center justify-center"
       >
         <div class="text-center space-y-4">
           <h2 class="text-[3.125rem] font-bold text-[#FFFFFF]">
@@ -349,5 +396,10 @@
         </div>
       </section>
     </footer>
+    <script>
+      function welcome() {
+        alert("Flower Added to Cart");
+      }
+    </script>
   </body>
 </html>
